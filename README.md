@@ -66,6 +66,9 @@ $ vagrant up
 ```bash
 $ vagrant provision --provision-with master-key,node01-key,node02-key
 ```
+vagrant ssh master -c 'chmod 600 master.key node01.key node02.key'
+
+#For the origin 3.11, the openshift_node_labels is deprecated, please remove it before run the playbook
 
 ### Install Origin Cluster Using Ansible
 
